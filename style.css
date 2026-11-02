@@ -1,0 +1,381 @@
+/* Anger grundläggande inställningar för hela sidan, bland annat bredden och att horisontell scrollning inte ska uppstå. */
+html 
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Bestämmer webbplatsens grundläggande utseende, såsom bakgrundsfärg, textfärg, typsnitt och textstorlek. */
+body
+{
+    width: 100%;
+    margin:0px;
+    background-color:#141313;
+    color: #ffffff;
+    font-family:'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* Bestämmer den övergripande behållarens bredd och placerar den i mitten av sidan. */
+#wrapper
+{
+    width: 100%;
+    margin: auto;
+}
+
+/* Bestämmer utseendet och placeringen av den översta menyraden, inklusive bakgrundsfärg, höjd och avstånd mellan innehållet. */
+#top
+{
+    background-color: #141313;
+    height: 58px;
+    width: 100%;
+    margin: auto;
+    padding: 0 13px 0 35px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Placerar länkarna till vänster i den översta menyraden bredvid varandra och centrerar dem vertikalt. */
+#leftinfo
+{
+    display: flex;
+    align-items: center;
+}
+
+/* Bestämmer färgen och tar bort understrykningen från länkarna i den vänstra delen av menyraden. */
+#leftinfo a
+{
+    color:#ffffff;
+    text-decoration: none;
+    
+}
+
+/* Ändrar länkarnas färg till rött när användaren håller muspekaren över dem. */
+#leftinfo a:hover
+{
+    color:#f71d1d;
+}
+
+/* Bestämmer avståndet runt de lodräta avdelarna mellan navigeringslänkarna. */
+.divider
+{
+    padding: 0px 8px 0px 8px;
+}
+
+/* Placerar knapparna till höger i den översta menyraden och bestämmer avståndet mellan dem. */
+#rightinfo
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Bestämmer utseendet på knapparna i den översta menyraden, inklusive färger, kantlinjer, storlek och textformat. */
+#rightinfo button
+{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Bestämmer utseendet på sidans huvudmeny, inklusive bakgrundsfärg, höjd och placering av innehållet. */
+#header
+{
+    height: 105px;
+    background-color: #000000;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+/* Bestämmer avståndet mellan sidans vänstra kant och logotypen. */
+#headerleft
+{
+    margin-left: 35px;
+}
+
+/* Bestämmer logotypens storlek och hur bilden anpassas inom sitt utrymme. */
+#headerleft img
+{
+    width: 180px;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Bestämmer placeringen och utseendet på navigeringslänkarna i mitten av huvudmenyn. */
+#headermid
+{
+    height: 24px;
+    width: 100%;
+    padding: 20px 0px 0px 5px;
+    color: #ffffff;
+    font-family:'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 135px;
+    float:left;
+}
+
+/* Bestämmer färgen och tar bort understrykningen från länkarna i huvudmenyn. */
+#headermid a
+{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+/* Ändrar navigeringslänkarnas färg till rött när användaren håller muspekaren över dem. */
+#headermid a:hover
+{
+    color:#f71d1d;
+}
+
+/* Bestämmer avståndet från högerkanten för menyknappen i huvudmenyn. */
+#headerright
+{
+    padding-right: 65px;
+}
+
+/* Bestämmer storleken och placeringen av menyikonen samt hur bilden anpassas inom sitt utrymme. */
+#headerright img
+{
+    width: 120px;
+    margin: -55px;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Bestämmer storleken, placeringen och hur välkomstbilden anpassas på webbsidan. */
+#welcomeimage img
+{
+    width: 1215px;
+    height: 450px;
+    padding: 40px 0px 0px 20px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Bestämmer utseendet på sektionen med säsongens resultat, inklusive typsnitt, textstorlek, avstånd och centrering. */
+#seasonresults
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Bestämmer bredden och utseendet på bilderna i sektionen med säsongens resultat. */
+#seasonresults img
+{
+    color:#ffffff;
+    text-decoration: none;
+    width: 1200px;
+}
+
+/* Bestämmer tabellens typsnitt, bredd och hur tabellens kantlinjer ska placeras. */
+#seasonresults table
+{
+    font-family: 'Inter', sans-serif;   
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Bestämmer kantlinjer och avståndet inuti tabellens rubrikceller och vanliga celler. */
+#seasonresults th,
+#seasonresults td
+{
+    border: 1px solid #cacaca;
+    padding: 8px;
+}
+
+#teamresults
+{
+    /* Bestämmer utseendet på sektionen som innehåller teamens resultat. */
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Bestämmer bredden och placeringen av bilderna i sektionen med teamresultat. */
+#teamresults img
+{
+    color:#ffffff;
+    text-decoration: none;
+    width: 1000px;
+    text-align: center;
+}
+
+/* Bestämmer tabellens typsnitt, bredd och hur tabellens kantlinjer ska placeras. */
+#teamresults table
+{
+    font-family: 'Inter', sans-serif;   
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Bestämmer kantlinjer och avståndet inuti teamtabellens rubrikceller och vanliga celler. */
+#teamresults th,
+#teamresults td
+{
+    border: 1px solid #cacaca;
+    padding: 8px;
+}
+
+/* Bestämmer storleken på logotyperna i lagtabellen. Samt ytan över logotyperna (skriven i px)*/
+#teamresults td img
+{
+    width: 65px;
+    height: 40px;
+    padding-top: 5px;
+}
+
+/* Bestämmer storleken, placeringen och beskärningen av bilderna som används för att separera resultatsektionerna. */
+#result-seperation
+{
+    width: 1215px;
+    height: 300px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+/* Gör länken runt separationsbilden till ett block som fyller hela bildens behållare. */
+#result-seperation a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anpassar separationsbilden så att den fyller hela behållaren utan att förlora sina proportioner. */
+#result-seperation img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Bestämmer typsnittet, bredden och hur kantlinjerna i tabellen med senaste tävlingsresultatet ska placeras. */
+#raceresults table
+{
+    font-family: 'Inter', sans-serif;   
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Bestämmer kantlinjer och avståndet inuti tabellens rubrikceller och vanliga celler för senaste tävlingsresultatet. */
+#raceresults th,
+#raceresults td
+{
+    border: 1px solid #cacaca;
+    padding: 8px;
+}
+
+/* Centrerar innehållet i sektionen med regler och skapar avstånd längst ner. */
+#apexgp-rules
+{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* Bestämmer storleken och placeringen av introduktionsbilden i regelavsnittet samt hur bilden beskärs. */
+#rules-intro img
+{
+    width: 1215px;
+    height: 350px;
+    padding: 40px 0px 40px 20px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Bestämmer bakgrundsfärg, textfärg och avstånd för sidans sidfot. */
+footer 
+{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px 20px;
+}
+
+/* Placerar innehållet i sidfoten i en vågrät rad och bestämmer avståndet mellan de olika delarna. */
+#bottom 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Bestämmer utseendet på rubrikerna i sidfoten, inklusive textstorlek och avstånd ovanför rubrikerna. */
+footer h3 
+{
+    font-size: 16px;
+    margin-top: 0;
+}
+
+/* Bestämmer det vertikala avståndet runt paragrafer i sidfoten. */
+footer p 
+{
+    margin: 15px 0;
+}
+
+/* Bestämmer utseendet på knapparna för sociala medier i sidfoten, inklusive färger, storlek och textformat. */
+#community-content button
+{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 8px 18px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Bestämmer färgen och tar bort understrykningen från länkarna i sidfotens snabbmeny och informationssektion. */
+#quicklinks a,
+#legalinfo a
+{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+/* Ändrar länkarna i sidfotens menyer till rött när användaren håller muspekaren över dem. */
+#quicklinks a:hover,
+#legalinfo a:hover
+{
+    color:#f71d1d;
+}
